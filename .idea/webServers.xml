@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="284d26c2-62e5-4ae1-88b7-53586819f03d" name="dell">
+        <fileTransfer rootFolder="/D:/projects/PythonProjects" accessType="SFTP" host="219.224.5.234" port="22" sshConfigId="424453b2-75c8-48d9-9429-41f99a214355" sshConfig="dell@219.224.5.234:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
