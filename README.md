@@ -1,7 +1,7 @@
 
 # SEED
 
-Implementations for the [__ICLR-2021 paper: SEED: Self-supervised Distillation For Visual Representation.__](https://arxiv.org/pdf/2101.04731.pdf) 
+Clone for the [__ICLR-2021 paper: SEED: Self-supervised Distillation For Visual Representation.__](https://arxiv.org/pdf/2101.04731.pdf) 
 ```
 @Article{fang2020seed,
   author  = {Fang, Zhiyuan and Wang, Jianfeng and Wang, Lijuan and Zhang, Lei and Yang, Yezhou and Liu, Zicheng},
@@ -11,23 +11,6 @@ Implementations for the [__ICLR-2021 paper: SEED: Self-supervised Distillation F
 }
 ```
 
-## Introduction
-
-This paper is concerned with self-supervised learning for small models. <img src="https://user-images.githubusercontent.com/17426159/126873068-ce5ebdce-d821-4a9c-9d94-52585039261e.png" width="330" height="280" align="right"> 
- The 
-problem is motivated by our empirical studies that while the widely used contrastive
-self-supervised learning method has shown great progress on large model training, 
-it does not work well for small models. To address this problem, we propose a
-new learning paradigm, named **SE**lf-Sup**E**rvised **D**istillation (**SEED**), where we
-leverage a larger network (as Teacher) to transfer its representational knowledge
-into a smaller architecture (as Student) in a self-supervised fashion. Instead of
-directly learning from unlabeled data, we train a student encoder to mimic the
-similarity score distribution inferred by a teacher over a set of instances. We show
-that SEED dramatically boosts the performance of small networks on downstream
-tasks. Compared with self-supervised baselines, SEED improves the top-1 accuracy
-from **42.2%** to **67.6%** on **EfficientNet-B0** and from **36.3%** to **68.2%** on **MobileNetV3-Large** on the ImageNet-1k dataset.
-SEED improves the **ResNet-50** from **67.4%** to **74.3%** from the previous MoCo-V2 baseline.
-![image](https://user-images.githubusercontent.com/17426159/126872552-a2873b52-a901-435a-a6cc-b8bc1a4e3248.png)
 
 ## Preperation
 Note: This repository does not contain the ImageNet dataset building, please refer to [MoCo-V2](https://github.com/facebookresearch/moco) for the enviromental setting & dataset preparation. Be careful if you use FaceBook's ImageNet dataset implementation as the provided dataloader here is to handle TSV ImageNet source.
